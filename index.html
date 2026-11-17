@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduardo Felipe Haag · Desenvolvedor Full Stack</title>
+<meta name="description" content="Eduardo Felipe Haag, desenvolvedor full stack (Node.js e React) com experiência em operação de e-commerce, marketplaces e integrações logísticas.">
+<style>
+  :root {
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --text: #1c1917;
+    --muted: #57534e;
+    --border: #e7e5e4;
+    --accent: #4f46e5;
+    --accent-soft: #eef2ff;
+    --tag-bg: #f5f5f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0a09;
+      --surface: #1c1917;
+      --text: #f5f5f4;
+      --muted: #a8a29e;
+      --border: #292524;
+      --accent: #818cf8;
+      --accent-soft: #1e1b4b;
+      --tag-bg: #292524;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 88px 0 56px; }
+  .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; letter-spacing: -0.02em; margin: 12px 0 16px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 640px; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 18px; border-radius: 10px; font-weight: 600; font-size: 15px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .btn:hover { text-decoration: none; border-color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn svg { width: 18px; height: 18px; fill: currentColor; }
+
+  section { padding: 40px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 22px; letter-spacing: -0.01em; margin-bottom: 20px; }
+  p + p { margin-top: 12px; }
+  .muted { color: var(--muted); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px; display: flex; flex-direction: column; gap: 8px;
+  }
+  a.card { color: var(--text); }
+  a.card:hover { text-decoration: none; border-color: var(--accent); }
+  .card h3 { font-size: 17px; }
+  .card p { font-size: 15px; color: var(--muted); flex: 1; }
+  .lang { font-size: 13px; color: var(--muted); }
+
+  .featured {
+    background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 16px; padding: 28px;
+  }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+    background: var(--accent); color: #fff; padding: 4px 10px; border-radius: 999px; margin-bottom: 12px;
+  }
+  .featured h3 { font-size: 21px; margin-bottom: 8px; }
+  .featured ul { margin: 14px 0 0 20px; }
+  .featured li { margin-top: 6px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { background: var(--tag-bg); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; font-size: 14px; }
+
+  .exp h3 { font-size: 18px; }
+  .exp .when { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+  .exp ul { margin-left: 20px; }
+  .exp li { margin-top: 6px; }
+
+  footer { padding: 40px 0 64px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Desenvolvedor Full Stack</div>
+    <h1>Eduardo Felipe Haag</h1>
+    <p class="lead">Desenvolvo aplicações web com Node.js e React. Tenho experiência prática na operação de e-commerce, com marketplaces, loja própria e integração logística, e construo ferramentas que resolvem problemas reais de lojistas.</p>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/eduhaag" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        GitHub
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/eduardo-felipe-haag" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Sobre</h2>
+    <p>Sou desenvolvedor full stack com foco em JavaScript e TypeScript: APIs em Node.js no back-end e interfaces em React no front-end.</p>
+    <p>Também passei cerca de dois anos dentro da operação de uma loja de e-commerce, cuidando dos marketplaces, da loja própria e da integração com a logística. Essa vivência me deu uma visão concreta das rotinas e dos gargalos de quem vende online, e é dela que nascem as ferramentas que desenvolvo.</p>
+  </section>
+
+  <section>
+    <h2>Em desenvolvimento</h2>
+    <div class="featured">
+      <span class="badge">Aplicativo para Nuvemshop</span>
+      <h3>Conferência de expedição com prova</h3>
+      <p>Aplicativo para pequenas e médias lojas virtuais que evita o envio de produto errado e registra uma prova de cada embalagem, usando apenas o celular, sem leitor dedicado e sem ERP.</p>
+      <ul>
+        <li>Conferência de cada item do pedido pela câmera do celular, com alerta de produto ou quantidade incorretos</li>
+        <li>Atualização automática do status do pedido para "embalado" via API da Nuvemshop</li>
+        <li>Foto da embalagem vinculada ao pedido, como evidência em caso de reclamação</li>
+        <li>Geração de etiquetas de código de barras para produtos que não possuem GTIN</li>
+      </ul>
+      <p class="muted" style="margin-top:14px;font-size:14px;">Stack: Node.js · React (PWA) · PostgreSQL · API e webhooks da Nuvemshop</p>
+    </div>
+  </section>
+
+  <section class="exp">
+    <h2>Experiência</h2>
+    <h3>Operação de e-commerce</h3>
+    <div class="when">Loja virtual de pequeno porte · cerca de 2 anos</div>
+    <ul>
+      <li>Gestão de anúncios e pedidos em marketplaces</li>
+      <li>Administração da loja virtual própria</li>
+      <li>Integração com a logística: fretes, envios e acompanhamento de entregas</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projetos no GitHub</h2>
+    <div class="grid">
+      <a class="card" href="https://github.com/eduhaag/meteora-modas" target="_blank" rel="noopener">
+        <h3>Meteora Modas</h3>
+        <p>Front-end de um e-commerce de moda construído com React.</p>
+        <span class="lang">TypeScript · React</span>
+      </a>
+      <a class="card" href="https://github.com/eduhaag/notiway" target="_blank" rel="noopener">
+        <h3>Notiway</h3>
+        <p>API REST para envio de notificações pelo WhatsApp.</p>
+        <span class="lang">API REST</span>
+      </a>
+      <a class="card" href="https://github.com/eduhaag/github-blog" target="_blank" rel="noopener">
+        <h3>GitHub Blog</h3>
+        <p>Blog que consome a API do GitHub para exibir publicações.</p>
+        <span class="lang">TypeScript</span>
+      </a>
+      <a class="card" href="https://github.com/eduhaag/Memoteca" target="_blank" rel="noopener">
+        <h3>Memoteca</h3>
+        <p>Mural de ideias, citações e pensamentos.</p>
+        <span class="lang">TypeScript</span>
+      </a>
+      <a class="card" href="https://github.com/eduhaag/study-tracker" target="_blank" rel="noopener">
+        <h3>Study Tracker</h3>
+        <p>Acompanhamento de estudos com cronômetro.</p>
+        <span class="lang">Vue</span>
+      </a>
+    </div>
+    <p class="muted" style="margin-top:16px;font-size:15px;">Outros projetos em <a href="https://github.com/eduhaag?tab=repositories" target="_blank" rel="noopener">github.com/eduhaag</a>.</p>
+  </section>
+
+  <section>
+    <h2>Tecnologias</h2>
+    <div class="tags">
+      <span class="tag">JavaScript</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">React</span>
+      <span class="tag">Vue</span>
+      <span class="tag">APIs REST</span>
+      <span class="tag">Webhooks</span>
+      <span class="tag">Git</span>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Eduardo Felipe Haag · <a href="https://github.com/eduhaag" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/eduardo-felipe-haag" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+</div>
+</body>
+</html>
